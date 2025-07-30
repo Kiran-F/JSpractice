@@ -1,0 +1,26 @@
+.main{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.button{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    border: 3px dashed black;
+    cursor: pointer;
+}
+.button:hover{
+    filter: brightness(0.8);
+}
+#pink{
+    background-color: pink;
+}
+#green{
+    background-color: rgb(4, 118, 4);
+}
+#blue{
+    background-color: blue;
+}
+#purple{
+    background-color: #c910c9;
+}
