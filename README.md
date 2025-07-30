@@ -1,0 +1,1 @@
+This project is just a collection of some of the JS tasks for practice.
