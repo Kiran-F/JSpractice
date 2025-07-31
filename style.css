@@ -2,4 +2,66 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html, body{
+    width: 100%;
+}
+main{
+    width: 90%;
+    margin: 10px auto;
+}
+h1{
+    text-align: center;
+    margin: 20px 0px;
+}
+.all-tasks a{
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    /* width: 25%; */
+    width: 30%;
+    margin: 10px auto;
+}
+.task img{
+    height: 13rem;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px dashed #000;
+    object-fit: cover;
+}
+.task h3{
+    margin: 5px 0;
+}
+.all-tasks a:hover{
+    img{
+        scale: 1.06;
+    }
+}
+.all-tasks{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+@media screen and (max-width: 900px){
+    .all-tasks a{
+    width: 45%;
+    }
+}
+@media screen and (max-width: 500px){
+    .all-tasks a{
+    width: 90%;
+    }
+}
+@media screen and (max-width: 400px){
+    .all-tasks a{
+    width: 100%;
+    }
+}
+@media screen and (min-width: 2000px){
+    .task img{
+    height: 20rem;
+}
 }
