@@ -11,7 +11,6 @@ console.log(randomColor());
 
 let IntervalId;
 function startChangingColor(){
-
     function colorChangeRepeat (){
         document.querySelector('body').style.backgroundColor = randomColor();
     }
