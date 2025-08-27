@@ -1,0 +1,35 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.products::-webkit-scrollbar{
+    display: none;
+}
+
+#cartItemsNumber{
+    width: 22px;
+    height: 22px;
+    background-color: rgb(255, 211, 52);
+    color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 11px;
+    right: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.populardiv{
+    margin-bottom: 4rem;
+}
+.categories::-webkit-scrollbar{
+    display: none;
+}
+
+.populars::-webkit-scrollbar{
+    display: none;
+}
+
+.shader{
+    background: linear-gradient(to right bottom, #69628a, #040309);
+}
