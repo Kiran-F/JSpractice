@@ -32,18 +32,18 @@ function searchFunctionality(){
         document.querySelector('.overlay').style.display = "block";
         //for displaying the list below the input field which starts with the input.value
         input.addEventListener('input', function(){
-        const filteredArray = arr.filter(obj => obj.name.toLowerCase().startsWith(input.value));
-        console.log(filteredArray);
-        let clutter = '';
-        filteredArray.forEach(obj => {
-            clutter += `<div class="res flex px-8 py3">
-                            <i class="ri-search-line font-semibold mr-5"></i>
-                            <h3 class="semi-bold">${obj.name}</h3>
-                        </div>`
+            const filteredArray = arr.filter(obj => obj.name.toLowerCase().startsWith(input.value));
+            console.log(filteredArray);
+            let clutter = '';
+            filteredArray.forEach(obj => {
+                clutter += `<div class="res flex px-8 py3">
+                                <i class="ri-search-line font-semibold mr-5"></i>
+                                <h3 class="semi-bold">${obj.name}</h3>
+                            </div>`
+            });
+            searchdropdown.style.display = 'block';
+            searchdropdown.innerHTML = clutter;
         });
-        searchdropdown.style.display = 'block';
-        searchdropdown.innerHTML = clutter;
-    });
     });
     //to hide the overlay div and the searchdrop down
     input.addEventListener('blur', function(){
